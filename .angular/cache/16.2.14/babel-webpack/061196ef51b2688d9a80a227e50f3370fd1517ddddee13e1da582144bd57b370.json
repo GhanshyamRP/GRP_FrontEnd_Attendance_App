@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Err {}","map":{"version":3,"names":["Err"],"sources":["F:\\PROFFESIONAL DOCS\\MY - Coding\\my language\\Jforce Sol\\attendanceApp\\src\\app\\class\\err.ts"],"sourcesContent":["export class Err {\n}\n"],"mappings":"AAAA,OAAM,MAAOA,GAAG","ignoreList":[]},"metadata":{},"sourceType":"module","externalDependencies":[]}

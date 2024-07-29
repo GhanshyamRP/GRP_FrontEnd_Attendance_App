@@ -1,0 +1,36 @@
+<div class="card text-center  "  style="max-width: 30%;margin-left: 35%;margin-top: 5%;">
+    <div class="card-header">
+      Register
+    </div>
+    <div class="card-body">
+  <form #reg="ngForm" (submit)="register(reg.value)" >
+    <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row"><input type="text" ngModel name="username" placeholder="User Name"></th>
+          </tr>
+          <tr>
+            <th scope="row"><input type="text" ngModel name="password" placeholder="Password"></th>
+          </tr>
+          <tr>
+            <th scope="row"><input type="text" ngModel name="email" placeholder="Email Id"></th>
+          </tr>
+          <tr>
+            <th scope="row"><input type="text" ngModel name="mob" placeholder="Phone No."></th>
+          </tr>
+          <tr>
+            <td>
+                <button (click)="gotolog()"  class="btn btn-primary ">
+                    Login
+                </button>
+                <button type="submit" style="margin-left: 10px;"  class="btn btn-primary ">
+                Register
+            </button>
+             </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    </div>
+  </div>
+  

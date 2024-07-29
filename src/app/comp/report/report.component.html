@@ -1,0 +1,24 @@
+
+<div >
+    <div class="card text-center"  style="max-width: 30%;margin-left: 35%;margin-top: 5%;">
+      <div  class="card-body">
+      <table class="table">
+          <tbody>
+            <tr *ngFor="let i of att ;">
+                <th scope="row" > 
+                    <div *ngIf="i.date "> {{i.date}}</div>
+                    <ng-container *ngIf="i.entrylst?.[0] == null">
+                      <div >Sign in  : Absent</div>
+                      <div >Sign Out : Absent </div>
+                    </ng-container>
+                    <ng-container *ngIf="i.entrylst?.[0] != null">
+                      <div *ngFor="let k of i.entrylst">{{k.type}} : {{k.time}} </div>
+                      
+                    </ng-container>
+                </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

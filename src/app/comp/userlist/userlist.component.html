@@ -1,0 +1,15 @@
+<div class="card text-center"  style="max-width: 30%;margin-left: 35%;margin-top: 5%;">
+    <div  class="card-body">
+      <table class="table">
+        <tbody>
+            <tr *ngFor="let i of userlist ">
+                <th > 
+                    <button class="btn bg-transparent" (click)="gotoycomp(i.id)">
+                       {{i.username}}
+                    </button>
+                 </th>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

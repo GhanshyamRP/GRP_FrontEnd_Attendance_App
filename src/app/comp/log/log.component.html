@@ -1,0 +1,68 @@
+<div  *ngIf="lastentry == 'Sign Out' || lastentry == 0 " >
+    <div class="card text-center"  style="max-width: 30%;margin-left: 35%;margin-top: 5%;">
+      <div class="card-header">
+        SignIn
+      </div>
+      <div  class="card-body">
+    <form (submit)="signIn()">
+      <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row"> {{att.date}}</th>
+            </tr>
+            <tr>
+              <th scope="row">{{currentTime}}</th>
+            </tr>
+            <tr>
+              <td><button type="submit"  class="btn btn-primary ">
+                SignIn
+              </button>
+               </td>
+            </tr>
+            <tr>
+              <th scope="row"> 
+                <button (click)="gotomyreport()"  class="btn btn-primary ">
+                  View Report
+              </button></th>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </div>
+    </div>
+  </div>
+  
+  <div   *ngIf="lastentry == 'Sign In'" >
+    <div class="card text-center"  style="max-width: 30%;margin-left: 35%;margin-top: 5%;">
+      <div class="card-header">
+        SignOut
+      </div>
+      <div  class="card-body">
+    <form  (submit)="signOut()" >
+      <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row"> {{att.date}}</th>
+            </tr>
+            <tr>
+              <th scope="row">{{currentTime}}</th>
+            </tr>
+            <tr>
+              <td>
+                <button type="submit"  class="btn btn-primary ">
+                  SignOut
+                </button>
+               </td>
+            </tr>
+            <tr>
+              <th scope="row"> 
+                <button (click)="gotomyreport()" class="btn btn-primary ">
+                  View Report
+              </button> </th>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </div>
+    </div>
+  </div>  

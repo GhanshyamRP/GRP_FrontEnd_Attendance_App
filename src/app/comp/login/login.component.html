@@ -1,0 +1,41 @@
+<div class="card text-center"  style="max-width: 30%;margin-left: 35%;margin-top: 5%;">
+    <div class="card-header">
+      Login
+    </div>
+    <div class="card-body" >
+     
+  <form #myform="ngForm" (submit)="login(myform.value)" >
+
+    <table class="table">
+        
+        <tbody>
+          <tr>
+            <th scope="row"><input type="text" ngModel name="username" placeholder="User Name"></th>
+          </tr>
+          <tr>
+            <th scope="row"><input type="text" ngModel name="password" placeholder="Password"></th>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit"  class="btn btn-primary ">
+                Login
+              </button>
+              <button (click)="gotoreg()"  class="btn btn-primary " style="margin-left: 10px;" >
+                Register
+              </button>
+             </td>
+          </tr>
+          <ng-container *ngIf="errmsg.msg!=null">
+          <tr >
+            <div style="color: red;">{{errmsg.msg}}</div>
+          </tr>
+        </ng-container>
+        </tbody>
+      </table>
+    
+      
+    </form>
+    </div>
+   
+  </div>
+  
